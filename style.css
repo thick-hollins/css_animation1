@@ -17,8 +17,8 @@ button {
 }
 
 .container {
-    width: 30vw;    
-    height: 70vw;
+    width: 100vw;    
+    height: 180vw;
 }
 .cssgrid {
     display: grid;
@@ -51,32 +51,32 @@ button {
 }
 
 .logo {
+    padding-bottom: 6vw;
     position: relative; 
-    line-height: 42%;
-    font-size: 10vw;
+    font-size: 40vw;
     font-family: Arial, Helvetica, sans-serif;
     animation-play-state: paused;
 }
 
 @keyframes down1 {
-    0%  { bottom: 0; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.0);}
-    40%{text-shadow: 0 0 0 rgba(0,2vw,2vw,0.3);}
+    0%  { bottom: 0; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.0);}
+    40%{text-shadow: 0 0 0 rgba(0,3vw,3vw,0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 @keyframes up1 {
     0%  { bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
-    100%{ bottom: -3.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    100%{ bottom: -3.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
 }
 @keyframes down2 {
-    0%  { bottom: -3.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    0%  { bottom: -3.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 @keyframes up2 {
     0%  { bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
-    100%{ bottom: -4.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    100%{ bottom: -4.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
 }
 @keyframes down3 {
-    0%  { bottom: -4.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    0%  { bottom: -4.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 
@@ -123,18 +123,18 @@ button {
 }
 @keyframes up1b {
     0%  { bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
-    100%{ bottom: -0.5vw; text-shadow: 0 3vw 4vw rgba(0, 0, 0, 0.3);}
+    100%{ bottom: -0.5vw; text-shadow: 0 6vw 10vw rgba(0, 0, 0, 0.3);}
 }
 @keyframes down2b {
-    0%  { bottom: -0.5vw; text-shadow: 0 3vw 4vw rgba(0, 0, 0, 0.3);}
+    0%  { bottom: -0.5vw; text-shadow: 0 6vw 8vw rgba(0, 0, 0, 0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 @keyframes up2b {
     0%  { bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
-    100%{ bottom: -3.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    100%{ bottom: -3.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
 }
 @keyframes down3b {
-    0%  { bottom: -3.5vw; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
+    0%  { bottom: -3.5vw; text-shadow: 0 6vw 6vw rgba(0, 0, 0, 0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 
