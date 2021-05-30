@@ -33,13 +33,17 @@ button {
     align-content: center;
     position: relative;
 }
-
+.g1 {
+    background-color: #E9D8D6;
+}
 .g2 {
+    background-color: #ebfffd;
     display: flex;
     justify-items: center;
     align-items: center;
 }
 .g3 {
+    background-color: #f3ebff;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -53,7 +57,6 @@ button {
     text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);
 }
 
-/* logo 1 and 2 keyframes */
 @keyframes down1 {
     0%  { bottom: 0; text-shadow: 0 3vw 3vw rgba(0, 0, 0, 0.3);}
     100%{ bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
