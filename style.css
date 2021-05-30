@@ -161,12 +161,11 @@ button {
                down3b 0.45s ease-in 2.67s forwards;
 }
 
-@keyframes reset {
-    0%  { opacity: 1; bottom: -5vw; text-shadow: 0 0 0 rgba(0, 0, 0, 0.2);}
-    49% { opacity: 0; bottom: -5vw; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
-    51% { opacity: 0; bottom: 0; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
+@keyframes reset-fadein {
+    0%  { opacity: 0; bottom: 0; text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);}
     100%{ opacity: 1; bottom: 0; text-shadow: 0 0 0 rgba(0,0,0,0.6);}
 }
 .reset {
-    animation: reset 0.6s linear forwards;
+    animation: fadeout 0.3s linear,
+               reset-fadein 0.3s linear forwards;
 }
