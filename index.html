@@ -11,54 +11,48 @@
     <div class="container">
         <div class="cssgrid">
             <div class="cell g1">
-                <div class="logo logo1">css</div>
+                <div class="logo logo1 reset">css</div>
                 <button id="play1"></button>
             </div>
             <div class="cell g2">
-                <div class="logo logo2">c</div>
-                <div class="logo logo2">s</div>
-                <div class="logo logo2">s</div>
+                <div class="logo logo2 reset">c</div>
+                <div class="logo logo2 reset">s</div>
+                <div class="logo logo2 reset">s</div>
                 <button id="play2"></button>
             </div>
             <div class="cell g3">
-                <div class="logo logo3">c</div>
-                <div class="logo logo3">s</div>
-                <div class="logo logo3">s</div>
+                <div class="logo logo3 reset">c</div>
+                <div class="logo logo3 reset">s</div>
+                <div class="logo logo3 reset">s</div>
                 <button id="play3"></button>
             </div>
         </div>
     </div>
     <script>
-        function toggleReset(el, animation) {
-            if (!el.classList.contains(animation) &&
-                !el.classList.contains("reset")) {
-                el.classList.add(animation)
-            } else if (el.classList.contains("reset")) {
-                el.classList.remove("reset");
-                el.classList.add(animation)
-            } else {
-                el.classList.remove(animation);
-                el.classList.add('reset');
-            }
-        }
         const button1 = document.getElementById('play1');
         button1.onclick = function() {
             let element = document.querySelector('.logo1');
-            toggleReset(element, 'dropLogo1');
+            element.classList.toggle('reset');
+            element.classList.toggle('dropLogo1');
+            element.classList.toggle('active', true);
         }
 
         const button2 = document.getElementById('play2');
         button2.onclick = function() {
-            var elements = document.querySelectorAll(".logo2");
-            for (let i = 1; i < 4; i++) {
-                toggleReset(elements[i-1], 'logo2-' + i)
+            let elements = document.querySelectorAll(".logo2");
+            for (const [i, element] of elements.entries()) {
+                element.classList.toggle('reset');
+                element.classList.toggle('logo2-' + (i + 1));
+                element.classList.toggle('active', true);
             }
         }
         const button3 = document.getElementById('play3');
         button3.onclick = function() {
-            var elements = document.querySelectorAll(".logo3");
-            for (let i = 1; i < 4; i++) {
-                toggleReset(elements[i-1], 'logo3-' + i)
+            let elements = document.querySelectorAll(".logo3");
+            for (const [i, element] of elements.entries()) {
+                element.classList.toggle('reset');
+                element.classList.toggle('logo3-' + (i + 1));
+                element.classList.toggle('active', true);
             }
         }
     </script>
